@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://kit.fontawesome.com/c122da7f22.js" crossorigin="anonymous"></script>
+
+    <title>Jalpor</title>
+</head>
+
+<body>
+
+
+    <div class="header-wrapper container-fluid ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <div class="logo" data-toggle="collapse">
+                            <a class="logo-brand" href="#">
+                                <img class="imagen-logo" src="/imagenes/jalpor-logo-horizontal.png"
+                                    alt="figura logo jalpor" width="150">
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <span class="menu-btn">Menu</span>
+                            <!--<div class="menu-btn"><img src="menu.png" alt="Menu"></div>-->
+                            <div class="menu-container">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="/index.html" class="nav-link">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index.html#funcionalidades" class="nav-link">Funcionalidades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/planes.html" class="nav-link">Planes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container seccion1 mb-5">
+        <h1 class="text-center titFormulario">Contáctenos</h1>
+        <form class="row mt-5" action="https://formspree.io/f/xqkwppgg" method="post" id="miFormulario">
+            <form class="row" id="miFormulario">
+                <div class="col-md-6 offset-lg-2 col-lg-4 mb-3">
+                    <label for="nombre" class="form-label titulos">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre"
+                        required>
+                    <div class="invalid-text">Por favor introduce tu nombre</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <label for="apellidos" class="form-label titulos">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos"
+                        placeholder="Introduce tus apellidos" required>
+                    <div class="invalid-text">Por favor introduce tus apellidos</div>
+                </div>
+                <div class="col-md-6 offset-lg-2 col-lg-4 mb-3">
+                    <label for="email" class="form-label titulos">Email</label>
+                    <input type="text" class="form-control " id="email" name="email"
+                        placeholder="Introduce tu dirección de email" required>
+                    <div id="email-text" class="form-text">No compartiremos tu email con terceros</div>
+                    <div class="invalid-text">Por favor introduce un email correcto</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <label for="telefono" class="form-label titulos">Telefono</label>
+                    <input type="text" class="form-control e" id="telefono" name="telefono"
+                        placeholder="Introduce tu teléfono" required>
+                    <div class="invalid-text">Por favor introduce tu teléfono (10 cifras sin espacios)</div>
+                </div>
+                <div class="offset-lg-2 col-lg-8 mb-3">
+                    <label for="commentarios" class="form-label titulos">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" name="comentarios" rows="5" required></textarea>
+                    <div class="invalid-text">Por favor introduce tu comentario (menos de 500 caracteres y sin incluir
+                        caracteres especiales)</div>
+                </div>
+                <div class="offset-lg-2 col-lg-8 mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="politica-privacidad"
+                            name="politica-privacidad" required>
+                        <label class="form-check-label" for="politica-privacidad">He leído y acepto la <a
+                                href="/politica-privacidad.html" target="_blank">Política de
+                                privacidad</a></label>
+                        <div class="invalid-text">Acepta la Política
+                            de Privacidad</div>
+                    </div>
+                </div>
+                <div class="offset-lg-2 col-lg-8 mb-3">
+                    <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+                </div>
+            </form>
+    </div>
+
+
+
+
+
+
+
+    <div class="container mb-5">
+        <div>
+            <h3 class="titlePreguntas">Preguntas frecuentes</h3>
+        </div>
+        <div class="accordion" id="accordionPanel">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent1">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child1" aria-expanded="false" aria-controls="child1">
+                        ¿Cómo puedo registrame en Jalpor?
+                    </button>
+                </h2>
+                <div id="child1" class="accordion-collapse collapse" aria-labelledby="parent1">
+                    <div class="accordion-body">
+                        Para poder registrarse debe rellenar nuestro formulario y tan pronto pueda nuestro acesor se
+                        pondrá en contacto contigo él te guiará en
+                        los siguientes pasos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child2" aria-expanded="false" aria-controls="child2">
+                        ¿Cómo puedo empezar a usar Jalpor?
+                    </button>
+                </h2>
+                <div id="child2" class="accordion-collapse collapse" aria-labelledby="parent2">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Primero ingresa tu usuario y contraseña</li>
+                            <li>Ccrear tus productos e ingresar tu inventario</li>
+                            <li>Crea tus clientes y proveedores</li>
+                            <li>Empieza a realizar tus transacciones diarias</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child3" aria-expanded="false" aria-controls="child3">
+                        ¿Qué quiere decir que Jalpor está en la Nube
+                    </button>
+                </h2>
+                <div id="child3" class="accordion-collapse collapse" aria-labelledby="parent3">
+                    <div class="accordion-body">
+                        Cuando se dice que una aplicación está en la nube, es porque funciona desde internet. No debes
+                        preocuparte por instalaciones, servidores, actualizaciones o por copias de seguridad; todo está
+                        guardado y protegido por Jalpor. Para iniciar sólo necesitas estar conectado a internet, puedes
+                        hacerlo desde móvil o tablet, desde cualquier lugar del mundo en el momento que desees. <br>Una
+                        vez
+                        instalada la app <strong> Jalpor </strong> funciona incluso sin conexión a internet. Una vez que
+                        el
+                        dispositivo recupera la conexión a internet, toda la información es sincronizada con el servidor
+                        y
+                        podrás visualizar toda la
+                        información
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child4" aria-expanded="false" aria-controls="child4">
+                        ¿Está segura mi información con Jalpor?
+                    </button>
+                </h2>
+                <div id="child4" class="accordion-collapse collapse" aria-labelledby="parent4">
+                    <div class="accordion-body">
+                        Claro que sí! La información que registres siempre estará segura con Jalpor y solo será
+                        visible para ti y los usuarios que tú autorices. Tu información almacenada en <strong>
+                            Jalpor</strong> se aloja en servidores de Amazon Web Services, una de las mejores
+                        plataformas a nivel mundial, que además realiza tus copias de seguridad automáticamente.
+                        Esta
+                        plataforma es utilizada por empresas como Nasa, Twitter y muchas más. Tu información está en
+                        las
+                        mejores manos, puedes estar tranquilo y ocuparte de hacer crecer tu negocio, <strong>
+                            Jalpor</strong> se encarga de cuidar tu información.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child5" aria-expanded="false" aria-controls="child5">
+                        ¿Cómo puedo ver los clientes por cobrar?
+                    </button>
+                </h2>
+                <div id="child5" class="accordion-collapse collapse" aria-labelledby="parent5">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Abrir el menu</li>
+                            <li>Escoger historial de ventas </li>
+                            <li>Haga clic donde dice por cobrar</li>
+                            <li>Seleccione el cliente del cual quiere gestionar la cuenta</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child6" aria-expanded="false" aria-controls="child6">
+                        ¿Cómo puedo registrar un cobro?
+                    </button>
+                </h2>
+                <div id="child6" class="accordion-collapse collapse" aria-labelledby="parent6">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Abrir el menu</li>
+                            <li>Historial de ventas</li>
+                            <li>Por cobrar</li>
+                            <li>Escoja ek cliente de cual quiere gestionar</li>
+                            <li>Gestionar pago</li>
+                            <li>Ingrese el valor y presione pago total a abonar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child7" aria-expanded="false" aria-controls="child7">
+                        ¿Cómo puedo realizar una venta?
+                    </button>
+                </h2>
+                <div id="child7" class="accordion-collapse collapse" aria-labelledby="parent7">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Abrir el menu</li>
+                            <li>Ingresa a ventas</li>
+                            <li>Escoja el cliente y busque el producto (para su mayor facilidad puede realizarlo con el
+                                lector de código de barras o la herramienta de palabra clave)</li>
+                            <li>Haga clic en el botón productos, se reflejará el resumen de todas los productos
+                                escogidos a
+                                ser vendidos</li>
+                            <li>Presione el botón pagar total</li>
+                            <li>Escoja efectivo o por cobrar</li>
+                            <li>Revise que todo esté correcto y presiona pagar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child8" aria-expanded="false" aria-controls="child8">
+                        ¿Como puedo editar transacciones?
+                    </button>
+                </h2>
+                <div id="child8" class="accordion-collapse collapse " aria-labelledby="parent8">
+                    <div class="accordion-body">
+                        Antes de que termines la transacción puedes editarla, retrocededs en el proceso y podrás cambiar
+                        los
+                        datos que necesites.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child9" aria-expanded="false" aria-controls="child9">
+                        ¿Cómo elimino transacciones?
+                    </button>
+                </h2>
+                <div id="child9" class="accordion-collapse collapse" aria-labelledby="parent9">
+                    <div class="accordion-body">
+                        Presione histotial de ventas o de compras y escoja la transacción de un clic en anular venta o
+                        compra.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child10" aria-expanded="false" aria-controls="child10">
+                        ¿Como puedo crear un producto nuevo?
+                    </button>
+                </h2>
+                <div id="child10" class="accordion-collapse collapse" aria-labelledby="parent10">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Abrir menu</li>
+                            <li>Haga un clic en el ícono mas</li>
+                            <li>Rellene todos los campos solicitados</li>
+                            <li>Verifique y presione guardar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent11">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child11" aria-expanded="false" aria-controls="child11">
+                        ¿Cómo edito o elimino un producto?
+                    </button>
+                </h2>
+                <div id="child11" class="accordion-collapse collapse" aria-labelledby="parent11">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Abrir menu</li>
+                            <li>Clic en productos</li>
+                            <li>Escoja el artículo</li>
+                            <li>Edite los campos que necesites o elimmine
+                                producto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent12">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child12" aria-expanded="false" aria-controls="child12">
+                        ¿Cómo puedo ver mi historial de ventas y compras?
+                    </button>
+                </h2>
+                <div id="child12" class="accordion-collapse collapse" aria-labelledby="parent12">
+                    <div class="accordion-body">
+                        Una vez que ingrese a menu elige el botón correspondiente ya sea de historial de compras o
+                        historial de ventas
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent13">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child13" aria-expanded="false" aria-controls="child13">
+                        ¿Cómo realizo una compra a proveedores?
+                    </button>
+                </h2>
+                <div id="child13" class="accordion-collapse collapse" aria-labelledby="parent13">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Ingrese a menu,</li>
+                            <li>Haga clic en compras</li>
+                            <li>Digite en el buscador el producto a comprar</li>
+                            <li>Escoja el proveedor</li>
+                            <li>Rellene los campos solicitados y realice el clic en agregar</li>
+                        </ul>
+                        Una vez que revise que todo esté correcto, presione pagar orden total y escoja las alternativas
+                        ya
+                        sea efectivo o por pagar.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="parent14">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#child14" aria-expanded="false" aria-controls="child14">
+                        ¿Cómo envío el recibo o tiket de la venta o compra?
+                    </button>
+                </h2>
+                <div id="child14" class="accordion-collapse collapse" aria-labelledby="parent14">
+                    <div class="accordion-body">
+                        Existen dos maneras para poder emitir el recibo de venta o compra:
+                        En historial de compras o ventas ecoja la transacción que necesita, haga un clik en recibo pdf o
+                        recibo imagen.
+                        Realice el proceso de venta o compra, cuando gestione el pago total tendra la opcion de recibo
+                        imagen o recibo pdf.
+                        Le dará opciones para poder compartir el recibo ya sea por redes sociales o correo electrónico o
+                        como mensaje al número de celular o como prefiera el usuario.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="boton-up">
+        <i class="fas fa-chevron-up" onclick="irInicio()"></i>
+    </div>
+
+
+
+    <footer class="page-footer font-small">
+
+        <div style="background-color: #1ecf9e;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 white-text">
+                        <h6 class="mb-0 text-light ">Puedes encontrarnos!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7  text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="redes p-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Twitter -->
+                        <a class="redes p-2" href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a class="redes p-2" href="#"><i class="fab fa-linkedin"></i></a>
+
+                        <a class="redes p-2" href="#"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer  -->
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3 dark-grey-text ">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 text-center">
+
+                    <img width="200px" src="/imagenes/jalpor-logo-grad.png" alt="">
+                    <p class="mt-2 w-80 ">¡Registra las transacciones de tu negocio directamente en tu
+                        celular y
+                        olvídate de
+                        las libretas!
+                    </p>
+
+                </div>
+
+                <div class=" col-12 col-sm-6 col-lg-3 mb-4 mx-auto ">
+
+                    <h6 class="text-uppercase font-weight-bold">Productos</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="footer-nav dark-grey-text" href="index.html#funcionalidades">Funcionalidades</a>
+                    </p>
+                    <p>
+                        <a class="footer-nav dark-grey-text" href="planes.html">Planes</a>
+                    </p>
+                    <p>
+                        <a class="footer-nav dark-grey-text" href="blog.html">Blog</a>
+                    </p>
+
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3  mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">Empresa</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <div class="col ">
+                        <p>
+                            <a class="footer-nav dark-grey-text" href="/politica-privacidad.html">Política de
+                                privacidad</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Ibarra-Ecuador
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@jalpor.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 593 96 994 95 70
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3">© 2021 Copyright:
+
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="form-validate.js"></script>
+
+</body>
+
+</html>
